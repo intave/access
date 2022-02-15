@@ -1,4 +1,4 @@
-package de.jpx3.intave.access.storage;
+package de.jpx3.intave.access.player.storage;
 
 import java.nio.ByteBuffer;
 import java.util.UUID;
