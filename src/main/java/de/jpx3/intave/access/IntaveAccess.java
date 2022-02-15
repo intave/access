@@ -9,6 +9,7 @@ import de.jpx3.intave.access.player.UnknownPlayerException;
 import de.jpx3.intave.access.player.trust.TrustFactor;
 import de.jpx3.intave.access.player.trust.TrustFactorResolver;
 import de.jpx3.intave.access.server.ServerAccess;
+import de.jpx3.intave.access.storage.StorageGateway;
 import org.bukkit.entity.Player;
 
 import java.io.PrintStream;
@@ -49,6 +50,8 @@ public interface IntaveAccess {
    * @param stream the stream to unsubscribe
    */
   void unsubscribeOutputStream(PrintStream stream);
+
+  void setStorageGateway(StorageGateway gateway);
 
   /**
    * Retrieves a player-specific {@link PlayerAccess}.
