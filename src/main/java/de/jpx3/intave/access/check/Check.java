@@ -12,8 +12,8 @@ public enum Check {
   INTERACTION_RAYTRACE("InteractionRaytrace"),
   INVENTORY_CLICK_ANALYSIS("InventoryClickAnalysis"),
   PHYSICS("Physics"),
-  PROTOCOL_SCANNER("ProtocolScanner"),
   PLACEMENT_ANALYSIS("PlacementAnalysis"),
+  PROTOCOL_SCANNER("ProtocolScanner"),
   TIMER("Timer"),
 
   ;
@@ -24,7 +24,7 @@ public enum Check {
     this.typeName = name;
   }
 
-  public static Check fromString(String name) {
+  public static Check fromName(String name) {
     for (Check value : values()) {
       if (value.typeName.equalsIgnoreCase(name)) {
         return value;

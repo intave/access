@@ -23,7 +23,9 @@ public interface CheckAccess {
    * Returns the corresponding {@link Check} enum setting for this check
    * @return the corresponding {@link Check} enum setting for this check
    */
-  Check enumCheck();
+  default Check enumCheck() {
+    return Check.fromName(name());
+  }
 
   /**
    * Return wheter this check is enabled

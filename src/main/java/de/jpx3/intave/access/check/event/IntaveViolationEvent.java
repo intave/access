@@ -69,7 +69,7 @@ public final class IntaveViolationEvent extends IntaveEvent implements Cancellab
    * @return the executing checks corresponding {@link Check}
    */
   public Check checkEnum() {
-    return Check.fromString(checkName);
+    return Check.fromName(checkName);
   }
 
   /**
