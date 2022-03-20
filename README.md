@@ -1,16 +1,16 @@
-# access
+# intave/access
 
-This is an API for bukkit plugin developers interacting with [Intave Anticheat](https://intave.de/). Please visit out [Discord Server](https://intave.de/go/discord) if you experience any issues or are looking for further instructions on how to use the API.
+This is a collection of interfaces for bukkit plugin developers interacting with the [Intave Anticheat](https://intave.de/). All classes present here will be available in the Intave jar file in production. Visit our [Discord Server](https://intave.de/go/discord) in case you experience any issues or are looking for further instructions on how to work with.
 
-## Downloading the .jar
+## Downloading the jar file
 
 1. Go to https://github.com/intave/access/actions.
 2. Click on the latest successful build.
 3. Click on the `intave-access` artifact at the bottom to download the .jar.
 
-## Using access with Maven
+## Using intave/access with Maven
 
-access is published via Github Packages. Currently, Github requires authentication for installing such packages with Maven.
+Intave Access is published via Github Packages. Currently, Github requires authentication for installing such packages with Maven.
 
 1. Create a personal access token in Github with `read:packages` permission (Settings -> Developer Settings -> Personal Access Token).
 2. Create a `settings.xml` file in your `~/.m2` folder with the following contents:
