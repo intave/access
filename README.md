@@ -1,6 +1,6 @@
 # intave/access
 
-This is a collection of interfaces for bukkit plugin developers interacting with the [Intave Anticheat](https://intave.de/). All classes present here will be available in the Intave jar file in production. Visit our [Discord Server](https://intave.de/go/discord) in case you experience any issues or are looking for further instructions on how to work with.
+This is a collection of interfaces for bukkit plugin developers interacting with the [Intave Anticheat](https://intave.de/). All classes present here will be available in the Intave jar file in production. Visit our [Discord Server](https://intave.de/go/discord) in case you experience any issues or are looking for further instructions on how to work with our API.
 
 ## Downloading the jar file
 
