@@ -6,7 +6,7 @@ This is a collection of interfaces for bukkit plugin developers interacting with
 
 1. Go to https://github.com/intave/access/releases.
 2. Click on the latest release.
-3. Click on the intave-access-<version>.jar to download it.
+3. Click on the intave-access-\<version\>.jar to download it.
 
 ## Using intave/access with Maven
 
