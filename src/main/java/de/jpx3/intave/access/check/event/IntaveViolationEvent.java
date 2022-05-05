@@ -84,6 +84,13 @@ public final class IntaveViolationEvent extends IntaveEvent implements Cancellab
   }
 
   /**
+   * @return the details of this violation.
+   */
+  public String getDetails() {
+    return this.details;
+  }
+
+  /**
    * Retrieve the detection message without details.
    * Usually in a format where it can be prefixed with the players name (e.g. "moved incorrectly")
    * @return a generalized message for this violation
