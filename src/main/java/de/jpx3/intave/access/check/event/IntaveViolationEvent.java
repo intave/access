@@ -86,7 +86,7 @@ public final class IntaveViolationEvent extends IntaveEvent implements Cancellab
   /**
    * @return the details of this violation.
    */
-  public String getDetails() {
+  public String details() {
     return this.details;
   }
 
