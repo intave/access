@@ -10,7 +10,62 @@ This is a collection of interfaces for bukkit plugin developers interacting with
 
 ## Using intave/access with Maven
 
-Intave Access is published via Github Packages. Currently, Github requires authentication for installing such packages with Maven.
+Intave Access v14.4.2+ is published via maven repository. Replace `VERSION` with the latest API version.
+
+Not every Intave update gets a new API version. [Available API versions](https://repo.janmm14.de/#browse/browse:intave:de%2Fjpx3%2Fintave%2Faccess%2Fintave-access)
+
+<details>
+    <summary><b style="color:blue">Maven</b></summary>
+
+```xml
+    <repositories>
+        <repository>
+            <id>janmm14-intave</id>
+            <url>https://repo.janmm14.de/repository/intave/</url>
+        </repository>
+    </repositories>
+```
+```xml
+   <dependencies>
+       <dependency>
+           <groupId>de.jpx3.intave.access</groupId>
+           <artifactId>intave-access</artifactId>
+           <version>VERSION</version>
+           <scope>provided</scope>
+       </dependency>
+   </dependencies>
+```
+</details>
+
+<details>
+   <summary><b>Gradle Kotlin</b></summary>
+
+```kts
+    maven {
+        url = uri("https://repo.janmm14.de/repository/intave/")
+    }
+```
+```kts
+   compileOnly("de.jpx3.intave.access:intave-access:VERSION")
+```
+
+</details>
+<details>
+   <summary><b>Gradle Groovy</b></summary>
+
+```groovy
+    maven {
+        url "https://repo.janmm14.de/repository/intave/"
+    }
+```
+```groovy
+    compileOnly 'de.jpx3.intave.access:intave-access:VERSION'
+```
+</details>
+
+<details>
+<summary>up to v14.4.2</summary>
+Intave Access is published via Github Packages. Currently, Github requires authentication for accessing such packages with Maven.
 
 1. Create a personal access token in Github with `read:packages` permission (Settings -> Developer Settings -> Personal Access Token).
 2. Create a `settings.xml` file in your `~/.m2` folder with the following contents:
@@ -59,9 +114,11 @@ Intave Access is published via Github Packages. Currently, Github requires authe
            <groupId>de.jpx3.intave.access</groupId>
            <artifactId>intave-access</artifactId>
            <version>VERSION</version>
+           <scope>provided</scope>
        </dependency>
    </dependencies>
    ```
    Replace VERSION with the latest API version. You can find the latest version here: https://github.com/intave/access/packages/1253852
    
 For more information, please visit [Github's documentation on Github Packages](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-apache-maven-registry).
+</details>
