@@ -31,6 +31,7 @@ Not every Intave update gets a new API version. [Available API versions](https:/
            <groupId>de.jpx3.intave.access</groupId>
            <artifactId>intave-access</artifactId>
            <version>VERSION</version>
+           <scope>provided</scope>
        </dependency>
    </dependencies>
 ```
@@ -113,6 +114,7 @@ Intave Access is published via Github Packages. Currently, Github requires authe
            <groupId>de.jpx3.intave.access</groupId>
            <artifactId>intave-access</artifactId>
            <version>VERSION</version>
+           <scope>provided</scope>
        </dependency>
    </dependencies>
    ```
